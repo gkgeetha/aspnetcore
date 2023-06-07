@@ -40,7 +40,7 @@ internal sealed class DiagnosticsMetrics
     {
         var tags = new TagList();
         tags.Add("exception-name", exceptionName);
-        tags.Add("result", result);
+        tags.Add("result", result.ToString());
         if (handler != null)
         {
             tags.Add("handler", handler);
